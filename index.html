@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meny by JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+  <!-- navigationsbar -->
+  <nav id="navigation">
+
+  </nav>
+    <div id="burger">☰</div>
+      <h1>Alice's Restaurant</h1>
+    <ul id="showBrg">
+      <li>Menukort</li>
+      <li>Bestil takeaway</li>
+      <li>Book bord</li>
+      <li>Om restauranten</li>
+    </ul>
+
+  </header>
+
+<body>
+<!-- Forsidebillede -->
+  <img class="header" src="images/mad.jpg" alt="#" style="width: 100%; height: auto;">
+  <!-- end slipsum code -->
+  <!-- Youtube video - studiedag 4 -->
+ <div id="synlig">
+      <div id="ytplayer"></div>
+ </div>
+
+<!-- Kontakt formular til bordbestilling -->
+  <form id="contact" action="echo.pl" method="POST">
+  <fieldset>
+  <legend>Bordbestilling</legend>
+  Name: <input type="text" name="Name" value="">
+  <br><br>
+  Email: <input type="text" name="Email" value="">
+  <br><br>
+  Antal personer: <input type="number" name="Antal personer" value="">
+  </fieldset>
+  <input type="submit">
+  </form>
+
+  <main>
+    <section id="menu">
+      <h2>Menu</h2>
+      <div id="citat"></div>
+    </section>
+    <aside id="praktiskInfo">
+      <div>
+        <h2>Åbningstider</h2>
+      </div>
+      <div>
+        <h2>Hvem er vi?</h2>
+        <ul id="hvem"></ul>
+      </div>
+      <div>
+        <h2>Hvor er vi?</h2>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <!-- spørgsmål 1: studiedag 1 -->
+    <div id="footerInfo"></div>
+  </footer>
+
+<!-- Link til javascript-->
+  <script src="js/alice.js"></script>
+</body>
+
+</html>

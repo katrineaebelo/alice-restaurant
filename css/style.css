@@ -1,0 +1,123 @@
+/**
+ Alice's Restaurant Aarhus
+ Stylesheet v. petj
+ **/
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Libre+Franklin:ital,wght@0,100;0,200;1,100&family=Roboto:wght@500&display=swap');
+
+:root {
+  /* color picker: https://duckduckgo.com/?q=color+picker&atb=v1-1&ia=answer */
+  --groen: #7ec962;
+  --blaa: #74a0b2;
+  --tegl: #c9627e;
+  --sort: #000;
+  --hvid: #fff;
+  --brun: #baaca1;
+  --morkbrun: #60554c;
+  --morkblaa: #272a56;
+  /* typografisk */
+  --font-a: 'Fruktur', cursive;
+  --font-b: 'Libre Franklin', sans-serif;
+  --font-c: 'Roboto', sans-serif;
+  /* whitespace */
+  --whitesp: 5rem;
+}
+
+h1{
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: var(--morkblaa);
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-b);
+  font-weight: bold;
+  color: var(--morkblaa);
+}
+
+p,
+div {
+  font-family: var(--font-c);
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+/* center */
+.center {
+  text-align: center;
+}
+
+body {
+  font-family: var(--font-c);
+  background-color: var(--brun);
+}
+
+
+/**
+* menu.css
+* Dropdown
+**/
+nav {
+  display: flex;
+}
+
+#showBrg {
+  display:none;
+}
+
+#burger {
+  font-size: 4rem;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  font-size: large;
+  padding: 2rem;
+}
+
+li:nth-child(odd) {
+  background: #e1e1ed;
+}
+
+li:nth-child(even) {
+  background: var(--blaa);
+}
+
+#largeDev {
+  display: none;
+}
+
+
+header,
+footer {
+  background-color: var(--morkbrun);
+  text-align: center;
+  min-height: 45px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* resp. images */
+img {
+  max-width: 100%;
+}
+
+.resp-img {
+  width: 100%;
+}
